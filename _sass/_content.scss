@@ -1,0 +1,43 @@
+p {
+    margin: 10px;
+}
+
+.mainPrimary p:first-child {
+    font-weight: bold;
+}
+
+/* Footer extras */
+.copy {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    clear: both;
+}
+
+.footLeft {
+    width: 46%;
+    float: left;
+}
+
+.footRight {
+    width: 46%;
+    float: right;
+}
+
+a {
+    color: #1144ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F2C40F;
+}
+
+footer a {
+    color: #F2C40F;
+}
+
+footer a:hover {
+    color: #1144ff;
+}

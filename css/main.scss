@@ -3,21 +3,45 @@
 ---
 @charset "utf-8";
 
-// Style settings
-$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+/**
+ * Style settings
+ */
 
-$spacing-unit:     30px;
+// Font styles
+$font-family-base:          "Quattrocento", Times, serif;
+$font-family-heading:       "Ubuntu", Arial, sans-serif;
+$font-size-base:            18px;
+$line-height:               26px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// Colors
+$color-text-base:                #2f2f2f;
+$color-text-header:         #fbfbfb;
+$color-background-header:   #1a1a1a;
+$color-background-nav:      #2ecd71;
+$color-link-nav-base:       #1a1a1a;
+$color-link-nav-hover:      #3598dc;
+$color-link-base:           #1144ff;
+$color-link-hover:          #f2c40f;
+$color-link-footer-base:    #f2c40f;
+$color-link-footer-hover:   #1144ff;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Element widths
+$width-main-full:           100%;
+$width-main-large:          74%;
+$width-main-medium:         49%;
+$width-main-small:          24%;
 
-$on-palm:          600px;
-$on-laptop:        900px;
+// Element heights and margins
+$height-footer-desktop:     165px;
+
+$on-palm:                   600px;
+$on-laptop:                 900px;
+
+@import
+    "reset",
+    "general",
+    "nav",
+    "heading",
+    "content",
+    "media"
+;

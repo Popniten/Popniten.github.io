@@ -6,7 +6,7 @@ layout: default
     <aside class="aside">
         <h2>Senast i bloggen</h2>
 
-        {% for post in site.posts limit 5 %}
+        {% for post in site.posts limit 4 %}
 
         <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <h4>By Popniten</h4>
@@ -16,12 +16,7 @@ layout: default
     </aside>
     <main class="main">
         <p>
-            Fusce mollis ut enim eu feugiat. Nulla accumsan quis enim sit amet iaculis. Phasellus mattis, erat
-            non imperdiet pharetra, ipsum ligula rhoncus ex, nec scelerisque nulla magna eu velit. Maecenas id
-            blandit orci. Nullam eget diam justo. Phasellus aliquet odio arcu, ac tincidunt nulla fermentum
-            semper. Sed volutpat dignissim finibus. Proin id viverra tellus, id sagittis lorem. Phasellus
-            aliquam erat tortor, sed auctor libero gravida in. Vestibulum ante ipsum primis in faucibus orci
-            luctus et ultrices posuere cubilia Curae.
+            {{ site.description }}
         </p>
     </main>
 </div>

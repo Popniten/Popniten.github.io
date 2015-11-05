@@ -1,0 +1,82 @@
+html {
+    min-height: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+body {
+    background: #fbfbfb;
+    color: #2f2f2f;
+    font-family: "Quattrocento", serif;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin: 0 0 165px 0; /* Bottom margin = footer height */
+}
+
+header {
+    background: #1A1A1A;
+    color: #FBFBFB;
+    height: 100px;
+    line-height: 100px;
+}
+
+header img {
+    border: 10px solid #2ECD71;
+    border-radius: 100px;
+    height: 150px;
+    width: auto;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+nav {
+    background: #2ECD71;
+    font-family: "Ubuntu", sans-serif;
+    height: 50px;
+    margin-bottom: 40px;
+    line-height: 50px;
+}
+
+.wrap {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.main {
+    margin: 0 0 200px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+    width: 49%;
+    float: right;
+}
+
+.aside {
+    margin: 0 0 200px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+    width: 49%;
+    float: left;
+    text-align: right;
+}
+
+.mainPrimary {
+    margin: 0 0 200px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+    width: 74%;
+    float: right;
+}
+
+.asideSecondary {
+    margin: 0 0 200px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+    width: 24%;
+    float: left;
+    text-align: right;
+}
+
+footer {
+    background: #1A1A1A;
+    color: #FBFBFB;
+    border-top: 10px solid #2ECD71;
+    font-family: "Ubuntu", sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 165px;
+    width: 100%;
+}

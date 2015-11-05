@@ -1,6 +1,6 @@
 <header>
     <div class="wrap">
-        <img src="assets/Popniten.jpg" alt="Pär 'Popniten' Eriksson" />
+        <img src="{{ "/assets/Popniten.jpg" | prepend: site.baseurl }}" alt="Pär 'Popniten' Eriksson" />
         <h1>Pär Eriksson - UDM15</h1>
     </div>
 </header>
@@ -13,7 +13,7 @@
         {% endif %}
         {% endfor %}
 
-        <li><a href="">Blog</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a href="{{ "/underconstruction/" | prepend: site.baseurl }}">Blog</a></li>
+        <li><a href="{{ "/underconstruction/" | prepend: site.baseurl }}">Projects</a></li>
     </ul>
 </nav>
