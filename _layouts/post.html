@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="wrap">
+    <aside class="asideSecondary">
+        <h2>{{ page.title }}</h2>
+
+        <h3>{{ page.date | date: "%B %-d, %Y" }}</h3>
+
+        {% if page.author %}
+        <h4>By {{ page.author }}</h4>
+        {% endif %}
+
+    </aside>
+    <main class="mainPrimary">
+        {{ content }}
+    </main>
+</div>
