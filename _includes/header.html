@@ -1,0 +1,19 @@
+<header>
+    <div class="wrap">
+        <img src="assets/Popniten.jpg" alt="Pär 'Popniten' Eriksson" />
+        <h1>Pär Eriksson - UDM15</h1>
+    </div>
+</header>
+<nav>
+    <ul class="wrap">
+
+        {% for page in site.pages %}
+        {% if page.title %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+
+        <li><a href="">Blog</a></li>
+        <li><a href="">Projects</a></li>
+    </ul>
+</nav>

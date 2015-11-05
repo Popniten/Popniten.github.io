@@ -1,0 +1,227 @@
+/* Reset */
+html, body, header, main, footer, h1, h2, h3,
+h4, h5, h6, div, p, blockquote, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling */
+html {
+    min-height: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+body {
+    background: #fbfbfb;
+    color: #2f2f2f;
+    font-family: "Quattrocento", serif;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin: 0 0 165px 0; /* Bottom margin = footer height */
+}
+
+header {
+    background: #1A1A1A;
+    color: #FBFBFB;
+    height: 100px;
+    line-height: 100px;
+}
+
+header img {
+    border: 10px solid #2ECD71;
+    border-radius: 100px;
+    height: 150px;
+    width: auto;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+nav {
+    background: #2ECD71;
+    font-family: "Ubuntu", sans-serif;
+    height: 50px;
+    margin-bottom: 40px;
+    line-height: 50px;
+}
+
+#wrapper {
+
+}
+
+.wrap {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.main {
+    margin: 0 0 200px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+    width: 49%;
+    float: right;
+}
+
+.aside {
+    margin: 0 0 200px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+    width: 49%;
+    float: left;
+    text-align: right;
+}
+
+.mainPrimary {
+    margin: 0 0 200px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+    width: 74%;
+    float: right;
+}
+
+.asideSecondary {
+    margin: 0 0 200px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+    width: 24%;
+    float: left;
+    text-align: right;
+}
+
+footer {
+    background: #1A1A1A;
+    color: #FBFBFB;
+    border-top: 10px solid #2ECD71;
+    font-family: "Ubuntu", sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 165px;
+    width: 100%;
+}
+
+/* Nav styling */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #1A1A1A;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 25px 0 5px;
+}
+
+nav ul li a:hover {
+    color: #3598DC;
+}
+
+/* Heading styling */
+h1, h2, h3, h4 {
+    margin: 0 0 10px 0;
+}
+
+header h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    margin: 0;
+}
+
+/* Content styling  */
+p {
+    margin: 10px;
+}
+
+.mainPrimary p:first-child {
+    font-weight: bold;
+}
+
+/* Footer extras */
+.copy {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    clear: both;
+}
+
+.footLeft {
+    width: 46%;
+    float: left;
+}
+
+.footRight {
+    width: 46%;
+    float: right;
+}
+
+a {
+    color: #1144ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F2C40F;
+}
+
+footer a {
+    color: #F2C40F;
+}
+
+footer a:hover {
+    color: #1144ff;
+}
+
+/* Media queries */
+
+@media (max-width: 900px) {
+    .wrap {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header img {
+        border: 6px solid #2ECD71;
+        height: 100px;
+    }
+
+    .main, .mainPrimary {
+        margin: 0 0 250px 0; /* Margin bottom = footer height + footer border + wanted margin*/
+        width: 100%;
+        float: none;
+    }
+
+    .aside, .asideSecondary {
+        margin: 0;
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+
+    .footLeft {
+        width: 95%;
+        float: none;
+    }
+
+    .footRight {
+        width: 95%;
+        float: none;
+    }
+
+    body {
+        margin-bottom: 230px;
+    }
+
+    footer {
+        height: 230px;
+    }
+
+}
