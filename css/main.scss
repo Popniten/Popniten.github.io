@@ -10,12 +10,17 @@
 // Font styles
 $font-family-base:          "Quattrocento", Times, serif;
 $font-family-heading:       "Ubuntu", Arial, sans-serif;
+$font-family-code:          "PT Mono", monospace;
 $font-size-base:            18px;
-$line-height:               26px;
+$line-height-base:          26px;
+$font-family-code:          "PT Mono", monospace;
+$font-size-code:            14px;
+$line-height-pre:           20px;
 
 // Colors
-$color-text-base:                #2f2f2f;
+$color-text-base:           #2f2f2f;
 $color-text-header:         #fbfbfb;
+$color-background-base:     #fbfbfb;
 $color-background-header:   #1a1a1a;
 $color-background-nav:      #2ecd71;
 $color-link-nav-base:       #1a1a1a;
@@ -32,7 +37,7 @@ $width-main-medium:         49%;
 $width-main-small:          24%;
 
 // Element heights and margins
-$height-footer-desktop:     165px;
+$height-footer:             165px;
 
 $on-palm:                   600px;
 $on-laptop:                 900px;
@@ -43,5 +48,6 @@ $on-laptop:                 900px;
     "nav",
     "heading",
     "content",
-    "media"
+    "media",
+    "syntax-highlighting"
 ;

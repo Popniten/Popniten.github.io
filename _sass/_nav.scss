@@ -1,18 +1,20 @@
-nav ul {
+nav {
     list-style-type: none;
-}
 
-nav ul li {
-    display: inline-block;
-}
+    ul {
+        li {
+            display: inline-block;
 
-nav ul li a {
-    color: #1A1A1A;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 25px 0 5px;
-}
+            a {
+                color: $color-link-nav-base;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0 25px 0 5px;
+            }
 
-nav ul li a:hover {
-    color: #3598DC;
+            a:hover {
+                color: $color-link-nav-hover;
+            }
+        }
+    }
 }

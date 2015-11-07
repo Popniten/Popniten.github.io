@@ -5,13 +5,13 @@ html {
 }
 
 body {
-    background: #fbfbfb;
-    color: #2f2f2f;
-    font-family: "Quattrocento", serif;
-    font-size: 18px;
-    line-height: 26px;
+    background: $color-background-base;
+    color: $color-text-base;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
     letter-spacing: 1px;
-    margin: 0 0 165px 0; /* Bottom margin = footer height */
+    margin: 0 0 $height-footer 0; /* Bottom margin = footer height */
 }
 
 header {

@@ -2,7 +2,7 @@ p {
     margin: 10px;
 }
 
-.mainPrimary p:first-child {
+main p:first-child {
     font-weight: bold;
 }
 
@@ -27,10 +27,11 @@ p {
 
 a {
     color: #1144ff;
+    outline: 0;
     text-decoration: none;
 }
 
-a:hover {
+a:hover, a:active, a:focus {
     color: #F2C40F;
 }
 
@@ -38,6 +39,19 @@ footer a {
     color: #F2C40F;
 }
 
-footer a:hover {
+footer a:hover, footer a:active, footer a:focus {
     color: #1144ff;
 }
+
+code {
+    font-family: $font-family-code;
+}
+
+pre {
+    line-height: $line-height-pre;
+    code {
+        font-size: $font-size-code;
+    }
+
+}
+

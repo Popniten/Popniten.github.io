@@ -6,3 +6,7 @@ categories: about
 ---
 
 A little blog post about me.
+
+[Jekyll docs][jekyll]
+
+[jekyll]:      http://jekyllrb.com

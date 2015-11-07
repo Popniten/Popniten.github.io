@@ -1,15 +1,24 @@
 <footer>
     <div class="wrap">
         <p class="footLeft">
-            <i class="fa fa-github-square"></i> GitHub<br />
-            <i class="fa fa-facebook-square"></i> Facebook<br />
-            <i class="fa fa-twitter-square"></i> Twitter<br />
-            <i class="fa fa-rss-square"></i> RSS<br />
+            {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}"> <i class="fa fa-github-square"></i> GitHub<br /></a>
+            {% endif %}
+
+            {% if site.github_username %}
+            <a href="https://www.facebook.com/{{ site.facebook_username }}"> <i class="fa fa-facebook-square"></i> Facebook<br /></a>
+            {% endif %}
+
+            {% if site.github_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}"> <i class="fa fa-twitter-square"></i> Twitter<br /></a>
+            {% endif %}
+
+            <i class="fa fa-rss-square"></i> Subscribe<br />
         </p>
         <p class="footRight">
             <a href="http://lnu.se/">Linnaeus University</a><br />
             <a href="https://coursepress.lnu.se/program/utveckling-och-drift-av-mjukvarusystem/">Software development and operations</a><br />
         </p>
-        <span class="copy">&copy; Pär Eriksson, 2015</span>
+        <span class="copy">&copy; 2015 Pär Eriksson</span>
     </div>
 </footer>
