@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="wrap">
-    <aside class="aside">
+<div class="wrapContent">
+    <aside class="asideSecondary">
         <h2>Senast i bloggen</h2>
 
         {% for post in site.posts limit 4 %}
@@ -14,7 +14,7 @@ layout: default
         {% endfor %}
 
     </aside>
-    <main class="main">
+    <main class="mainPrimary">
         <p>
             {{ site.description }}
         </p>

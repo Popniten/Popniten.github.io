@@ -37,16 +37,14 @@ $width-main-medium:         49%;
 $width-main-small:          24%;
 
 // Element heights and margins
-$height-footer:             165px;
+$height-footer-laptop:      170px;
+$height-footer-palm:        250px;
 
-$on-palm:                   600px;
+$on-palm:                   700px;
 $on-laptop:                 900px;
 
 @import
-    "reset",
     "general",
-    "nav",
-    "heading",
     "content",
     "media",
     "syntax-highlighting"

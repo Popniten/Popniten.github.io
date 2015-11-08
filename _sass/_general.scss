@@ -1,3 +1,9 @@
+html, body, header, main, footer, h1, h2, h3,
+h4, h5, h6, div, p, blockquote, img {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     min-height: 100%;
     position: relative;
@@ -11,7 +17,11 @@ body {
     font-size: $font-size-base;
     line-height: $line-height-base;
     letter-spacing: 1px;
-    margin: 0 0 $height-footer 0; /* Bottom margin = footer height */
+    margin: 0 0 $height-footer-laptop 0; /* Bottom margin = footer height */
+}
+
+h1, h2, h3, h4 {
+    margin: 0 0 10px 0;
 }
 
 header {
@@ -19,15 +29,22 @@ header {
     color: #FBFBFB;
     height: 100px;
     line-height: 100px;
-}
 
-header img {
-    border: 10px solid #2ECD71;
-    border-radius: 100px;
-    height: 150px;
-    width: auto;
-    float: left;
-    margin: 0 15px 0 0;
+    header h1 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+        font-size: 46px;
+        margin: 0;
+    }
+
+    img {
+        border: 10px solid #2ECD71;
+        border-radius: 100px;
+        height: 150px;
+        width: auto;
+        float: left;
+        margin: 0 15px 0 0;
+    }
 }
 
 nav {
@@ -36,10 +53,44 @@ nav {
     height: 50px;
     margin-bottom: 40px;
     line-height: 50px;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                color: $color-link-nav-base;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0 25px 0 5px;
+            }
+
+            a:hover {
+                color: $color-link-nav-hover;
+            }
+        }
+    }
+}
+
+main {
+    p:first-child {
+        font-weight: bold;
+    }
+}
+
+p {
+    margin: 10px;
 }
 
 .wrap {
     width: 900px;
+    margin: 0 auto;
+}
+
+.wrapContent {
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -79,4 +130,112 @@ footer {
     bottom: 0;
     height: 165px;
     width: 100%;
+
+    a {
+        color: #F2C40F;
+    }
+
+    a:hover, footer a:active, footer a:focus {
+        color: #1144ff;
+    }
 }
+
+
+a {
+    color: #1144ff;
+    outline: 0;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    color: #F2C40F;
+}
+
+
+
+/* Footer extras */
+.copy {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    clear: both;
+}
+
+.footLeft {
+    width: 46%;
+    float: left;
+}
+
+.footRight {
+    width: 46%;
+    float: right;
+}
+
+code {
+    font-family: $font-family-code;
+}
+
+pre {
+    line-height: $line-height-pre;
+
+    code {
+        font-size: $font-size-code;
+    }
+
+}
+
+@media (max-width: $on-laptop) {
+    .wrap {
+        width: 100%;
+    }
+}
+
+@media (max-width: $on-palm) {
+    header {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header img {
+        border: 6px solid $color-background-nav;
+        height: 100px;
+    }
+
+    .main, .mainPrimary {
+        margin: 0 0 ($height-footer-laptop + 85px) 0; /* Margin bottom = footer height + footer border + wanted margin*/
+        width: 100%;
+        float: none;
+    }
+
+    .aside, .asideSecondary {
+        margin: 0;
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+
+    .footLeft {
+        width: 95%;
+        float: none;
+    }
+
+    .footRight {
+        width: 95%;
+        float: none;
+    }
+
+    body {
+        margin-bottom: $height-footer-palm;
+    }
+
+    footer {
+        height: $height-footer-palm;
+    }
+
+}
+
