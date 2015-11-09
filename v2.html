@@ -5,13 +5,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento%7COpen+Sans" rel="stylesheet" type="text/css" />
+    <title>Pär Eriksson</title>
+    <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento%7COpen+Sans%7CYanone+Kaffeesatz%7CCinzel" rel="stylesheet" type="text/css" />
+    <link href="{{ "/css/font-awesome/css/font-awesome.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-Re-designing
+<div id="wrapper">
+<nav>
+    <img src="{{ "/assets/Popniten.jpg" | prepend: site.baseurl }}" alt="Pär 'Popniten' Eriksson" />
+    <ul>
+        {% for page in site.pages %}
+        {% if page.title %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+        {% endfor %}
 
+        <li><a href="{{ "/underconstruction/" | prepend: site.baseurl }}">Blog</a></li>
+        <li><a href="{{ "/underconstruction/" | prepend: site.baseurl }}">Projects</a></li>
+    </ul>
+</nav><!--
+--><main>
+    <div class="description">
+        {{ site.description }}
+    </div>
+</main><!--
+--><aside>
+    <div>
+        <a href="">
+            <span class="fa-stack color-fa-rs fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <span class="fa-stack color-fa-gh fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <span class="fa-stack color-fa-fb fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <span class="fa-stack color-fa-tw fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <span class="fa-stack color-fa-in fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <span class="fa-stack color-fa-ht fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-html5 fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <span class="fa-stack color-fa-cs fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-css3 fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+</aside>
+</div>
+<footer>
+    <div>
+        Footer
+    </div>
+</footer>
 </body>
 </html>

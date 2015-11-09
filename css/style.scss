@@ -1,0 +1,153 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+/* Variables */
+$width-asides: 180px;
+$width-main: 900px;
+
+$height-footer: 120px;
+
+$color-background-base: #fbfbfb;
+$color-text-base: #343434;
+$color-text-light: #7c7c7c;
+$color-link-hover: #f2c40f;
+
+$font-family-heading: "Yanone Kaffeesatz", sans-serif;
+$font-family-base: "Open Sans", sans-serif;
+$font-family-serif: "Cinzel", serif;
+
+$margin-layout-element: 20px;
+
+/* Resets */
+html, body, nav, main, aside, div, img, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Icon colors */
+.color-fa-fb {
+    color: #3B5998;
+}
+
+.color-fa-gh {
+    color: #333333;
+}
+
+.color-fa-tw {
+    color: #55ACEE;
+}
+
+.color-fa-in {
+    color: #3F729B;
+}
+
+.color-fa-rs {
+    color: #FB7629;
+}
+
+.color-fa-ht {
+    color: #E44D26;
+}
+
+.color-fa-cs {
+    color: #0070BB;
+}
+
+/* Styling */
+html {
+    min-height: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+body {
+    background: $color-background-base;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: $height-footer;
+}
+
+#wrapper {
+    width: ($width-main + ($width-asides * 2));
+    margin: 0 auto;
+}
+
+nav {
+    display: inline-block;
+    width: $width-asides;
+    float: left;
+    margin-top: $margin-layout-element;
+
+    img {
+        border: 10px solid $color-text-base;
+        height: 100px;
+        width: auto;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0 0 0 20px;
+
+        li {
+            font-family: $font-family-heading;
+            font-size: 20px;
+            font-weight: bold;
+            a {
+                color: $color-text-base;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $color-link-hover;
+            }
+        }
+    }
+}
+
+main {
+    display: inline-block;
+    width: $width-main;
+    float: left;
+    margin-top: $margin-layout-element;
+}
+
+aside {
+    display: inline-block;
+    text-align: center;
+    width: $width-asides;
+    margin-top: $margin-layout-element;
+
+    a:hover {
+        span {
+            color: $color-link-hover;
+        }
+    }
+}
+
+footer {
+    background: $color-text-base;
+    color: $color-background-base;
+    font-family: $font-family-serif;
+    height: $height-footer;
+    line-height: $height-footer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    div {
+        width: ($width-main + ($width-asides * 2));
+        margin: 0 auto;
+    }
+}
+
+.description {
+    color: $color-text-light;
+    font-family: $font-family-serif;
+    font-size: 26px;
+    font-style: italic;
+    letter-spacing: 3px;
+    line-height: 35px;
+    text-align: center;
+    width: 85%;
+    margin: 40px auto;
+}
