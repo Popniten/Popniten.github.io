@@ -2,30 +2,33 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 /* Variables */
-$width-asides: 180px;
-$width-main: 900px;
+$width-asides: 10%;
+$width-main: 65%;
 
 $height-footer: 120px;
 
 $color-background-base: #fbfbfb;
 $color-text-base: #343434;
 $color-text-light: #7c7c7c;
+$color-link-base: #1144ff;
 $color-link-hover: #f2c40f;
+$color-link-visited: #553bab;
 
 $font-size-base: 18px;
 $font-family-heading: "Yanone Kaffeesatz", sans-serif;
 $font-family-base: "Open Sans", sans-serif;
-$font-family-serif: "Cinzel", serif;
+$font-family-serif: "Sanchez", serif;
 
 $margin-layout-element: 20px;
 
 /* Resets */
-html, body, nav, main, aside, div, img, ul {
+html, body, nav, main, aside, div, img, ul,
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
 
-/* Icon colors */
+/* Brand icon colors */
 .color-fa-fb {
     color: #3B5998;
 }
@@ -67,6 +70,7 @@ html {
 
 body {
     background: $color-background-base;
+    color: $color-text-base;
     font-family: $font-family-base;
     font-size: $font-size-base;
     margin-bottom: $height-footer;
@@ -75,6 +79,8 @@ body {
 #wrapper {
     width: ($width-main + ($width-asides * 2));
     margin: 0 auto;
+    overflow: auto;
+    text-align: center;
 }
 
 nav {
@@ -82,6 +88,7 @@ nav {
     width: $width-asides;
     float: left;
     margin-top: $margin-layout-element;
+    text-align: center;
 
     img {
         display: block;
@@ -91,14 +98,18 @@ nav {
     }
 
     ul {
+        display: inline-block;
         list-style-type: none;
-        margin: 0 0 0 20px;
+        margin: 10px auto 0 auto;
+        text-align: left;
 
         li {
             font-family: $font-family-heading;
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
-            a {
+            text-transform: uppercase;
+
+            a, a:visited {
                 color: $color-text-base;
                 text-decoration: none;
             }
@@ -112,15 +123,42 @@ nav {
 
 main {
     display: inline-block;
+    text-align: left;
     width: $width-main;
-    float: left;
     margin-top: $margin-layout-element;
+}
+
+
+p {
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+a {
+    color: $color-link-base;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $color-link-visited;
+}
+
+a:hover {
+    color: $color-link-hover;
+}
+
+
+h2, h3, h4 {
+    font-family: $font-family-serif;
+    margin: 10px 0 0 0;
 }
 
 aside {
     display: inline-block;
     text-align: center;
     width: $width-asides;
+    float: right;
     margin-top: $margin-layout-element;
 
     a:hover {
@@ -175,14 +213,34 @@ footer {
     font-family: $font-family-serif;
     font-size: 26px;
     font-style: italic;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     line-height: 35px;
     text-align: center;
     width: 85%;
-    margin: 40px auto;
+    margin: 40px auto 100px auto;
+}
+
+.summary {
+    display: inline-block;
+    width: 32.5%;
+    float: left;
+
+    div {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.summaryTitle {
+    display: block;
+    font-family: $font-family-heading;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Alignment */
 .right {
     float: right;
 }
+

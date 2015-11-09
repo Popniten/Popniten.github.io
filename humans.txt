@@ -1,0 +1,14 @@
+/* TEAM */
+Your title: Pär Eriksson.
+Site: https://popniten.github.io/
+Twitter: ParPopniten.
+Location: Kalmar, Sweden.
+
+/* THANKS */
+Name: https://coursepress.lnu.se/program/utveckling-och-drift-av-mjukvarusystem/
+
+/* SITE */
+Last update: 2015/11/09
+Standards: HTML5, CSS3, JavaScript ES5
+Components: Jekyll, Sass, Font Awesome
+Software: JetBrains WebStorm, Inkscape

@@ -7,14 +7,16 @@
     <meta charset="UTF-8">
     <title>Pär Eriksson</title>
     <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento%7COpen+Sans%7CYanone+Kaffeesatz%7CCinzel" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento%7COpen+Sans%7CYanone+Kaffeesatz%7CSanchez" rel="stylesheet" type="text/css" />
     <link href="{{ "/css/font-awesome/css/font-awesome.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link type="text/plain" rel="author" href="{{ '/humans.txt' | prepend: site.baseurl | prepend: site.url }}" />
 </head>
 <body>
 
 <div id="wrapper">
 <nav>
-    <img src="{{ "/assets/pop-logo.png" | prepend: site.baseurl }}" alt="Pär 'Popniten' Eriksson" />
+    <img src="{{ "/assets/pop-logo3.png" | prepend: site.baseurl }}" alt="Pär 'Popniten' Eriksson" />
     <ul>
         {% for page in site.pages %}
         {% if page.title %}
@@ -27,12 +29,52 @@
     </ul>
 </nav><!--
 --><main>
-    <div class="description">
+    <p class="description">
         {{ site.description }}
+    </p>
+    <div class="summary">
+        <div>
+            <span class="fa-stack fa-3x fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <span class="summaryTitle">Latest in the blog</span>
+        {% for post in site.posts limit 4 %}
+
+        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        {% if post.author %}
+            <small><em>{{ post.author }}, {{ post.date | date: "%b %-d, %Y" }}</em></small>
+        {% endif %}
+
+        {% endfor %}
+    </div>
+    <div class="summary">
+        <div>
+            <span class="fa-stack fa-3x fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <span class="summaryTitle">My course projects</span>
+        <p>
+            Here will be links to all projects I make in the courses I take.
+        </p>
+    </div>
+    <div class="summary">
+        <div>
+            <span class="fa-stack fa-3x fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <span class="summaryTitle">Design portfolio</span>
+        <p>
+            This will act as a portfolio for web design, drawings and other art I make.
+        </p>
     </div>
 </main><!--
 --><aside>
-    Share<br />
     <div>
         <a href="">
             <span class="fa-stack color-fa-rs fa-lg">
