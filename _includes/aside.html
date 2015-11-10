@@ -1,6 +1,6 @@
 <aside>
     <div>
-        <a href="">
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" rel="nofollow" title="Subscribe">
             <span class="fa-stack color-fa-rs fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -8,7 +8,7 @@
         </a>
     </div>
     <div>
-        <a href="">
+        <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url | replace:'index.html','' }}" rel="nofollow" target="_blank" title="Share on Facebook">
             <span class="fa-stack color-fa-fb fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -16,18 +16,18 @@
         </a>
     </div>
     <div>
-        <a href="">
-            <span class="fa-stack color-fa-tw fa-lg">
+        <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url | replace:'index.html','' }}" rel="nofollow" target="_blank" title="Share on Google+">
+            <span class="fa-stack color-fa-gp fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
             </span>
         </a>
     </div>
     <div>
-        <a href="">
-            <span class="fa-stack color-fa-in fa-lg">
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url | replace:'index.html','' }}&amp;via={{ site.twitter_username }}&amp;related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+            <span class="fa-stack color-fa-tw fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
             </span>
         </a>
     </div>

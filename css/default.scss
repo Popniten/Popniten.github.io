@@ -24,7 +24,7 @@ $margin-layout-element: 20px;
 
 /* Resets */
 html, body, nav, main, aside, div, img, ul,
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, blockquote {
     margin: 0;
     padding: 0;
 }
@@ -62,6 +62,10 @@ h1, h2, h3, h4, h5, h6, p {
     color: #D64937;
 }
 
+.color-fa-gp {
+    color: #DC4E41;
+}
+
 /* General styling */
 html {
     min-height: 100%;
@@ -79,7 +83,7 @@ body {
 
 #wrapper {
     width: ($width-main + ($width-asides * 2));
-    margin: 0 auto;
+    margin: 0 auto ($height-footer + $margin-layout-element) auto;
     overflow: auto;
     text-align: center;
 }
@@ -189,12 +193,25 @@ p {
     margin: 15px 0;
 }
 
+pre {
+    background: $color-background-base;
+}
+
+main.blogPost>p:first-of-type {
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-align: justify;
+}
+
 ul {
     margin-left: 25px;
 }
 
 blockquote, pre>code {
     background: $color-text-superlight;
+    font-size: 16px;
     display: block;
     border-radius: 15px;
     padding: 5px 15px;
@@ -221,16 +238,24 @@ h1, h2, h3, h4 {
     margin: 10px 0 0 0;
 }
 
+h3.blog, h4.blog {
+    display: block;
+    text-align: right;
+    font-family: $font-family-heading;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
 .description {
     color: $color-text-light;
     font-family: $font-family-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-style: italic;
     letter-spacing: 4px;
     line-height: 35px;
     text-align: center;
-    width: 85%;
-    margin: 40px auto 100px auto;
+    width: 90%;
+    margin: 30px auto 50px auto;
 }
 
 .summary {
@@ -256,6 +281,10 @@ h1, h2, h3, h4 {
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
+}
+
+#disqus_thread {
+    margin-top: 30px;
 }
 
 /* Alignment */

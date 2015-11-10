@@ -1,12 +1,15 @@
 ---
-layout: page
-title: MD Template
-permalink: /md_example/
+layout: post
+title:  "Markdown example for typography design"
+date:   2015-11-10 12:56:13
+author: Pär Eriksson
+description: A template of markdown for typography design.
+categories: Markdown Typography
 ---
-An h1 header
-============
-
-Paragraphs are separated by a blank line.
+Donec id magna nibh. Aliquam dictum luctus lacus, mattis cursus nisi feugiat et. Suspendisse potenti. Nullam cursus, 
+ex non maximus pellentesque, velit tortor iaculis ex, non pretium eros mi quis tortor. Suspendisse ex libero, dignissim 
+sit amet efficitur ac, iaculis at nisl. Vivamus erat quam, accumsan et placerat quis, laoreet nec urna. Cras mauris 
+dolor, feugiat et rhoncus non, euismod non ligula. 
 
 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
 look like:
@@ -104,28 +107,13 @@ doc](#an-h2-header). Here's a footnote [^1].
 
 Tables can look like this:
 
-size  material      color
-----  ------------  ------------
-9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent
+|size| material     | color      |
+|----|--------------|------------|
+|9   |  leather     | brown      |
+|10  |  hemp canvas | natural    |
+|11  |  glass       | transparent|
 
 Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
---------  -----------------------
-keyword   text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
-
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
 
 A horizontal rule follows.
 

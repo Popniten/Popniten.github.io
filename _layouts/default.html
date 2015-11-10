@@ -4,12 +4,15 @@
 <body>
 
 <div id="wrapper">
-    {% include nav.html %}
-    <main>
-        {{ content }}
-    </main>
-    {% include aside.html %}
+{% include nav.html %}
+
+{{ content }}
+
+{% include aside.html %}
 </div>
 {% include footer.html %}
+
+<script id="dsq-count-scr" src="//popnitendevop.disqus.com/count.js" async></script>
+
 </body>
 </html>

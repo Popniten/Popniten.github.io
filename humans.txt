@@ -5,10 +5,11 @@ Twitter: ParPopniten.
 Location: Kalmar, Sweden.
 
 /* THANKS */
-Name: https://coursepress.lnu.se/program/utveckling-och-drift-av-mjukvarusystem/
+Name: lindehoff, leitet, mats, thajo
+URL: http://udm-devops.se/, http://webbprogrammerare.se/, http://lnu.se/
 
 /* SITE */
-Last update: 2015/11/09
+Last update: 2015/11/10
 Standards: HTML5, CSS3, JavaScript ES5
-Components: Jekyll, Sass, Font Awesome
+Components: Jekyll, Sass, Font Awesome, Disqus, Open Graph
 Software: JetBrains WebStorm, Inkscape

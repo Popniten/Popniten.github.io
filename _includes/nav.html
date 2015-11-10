@@ -1,13 +1,10 @@
 <nav>
-    <img src="{{ "/assets/pop-logo3.png" | prepend: site.baseurl }}" alt="Popnitens logo" />
+    <img src="{{ "/assets/pop-logo.png" | prepend: site.baseurl }}" alt="Popnitens logo" />
     <ul>
         {% for page in site.pages %}
         {% if page.title %}
         <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
         {% endif %}
         {% endfor %}
-
-        <li><a href="{{ "/underconstruction/" | prepend: site.baseurl }}">Blog</a></li>
-        <li><a href="{{ "/underconstruction/" | prepend: site.baseurl }}">Projects</a></li>
     </ul>
 </nav>

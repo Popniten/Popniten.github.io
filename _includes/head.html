@@ -1,10 +1,11 @@
 <head>
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} || {% endif %}{% if site.title %}{{ site.title }}{% endif %}</title>
-    <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}" type="text/css" />
+    <link rel="stylesheet" href="{{ site.color_scheme | prepend: site.baseurl }}" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CYanone+Kaffeesatz%7CSanchez" rel="stylesheet" type="text/css" />
     <link href="{{ "/css/font-awesome/css/font-awesome.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link type="text/plain" rel="author" href="{{ '/humans.txt' | prepend: site.baseurl | prepend: site.url }}" />
     <meta name="description" content="{{ site.description }}" />
+    {% include opengraph_meta.html %}
 </head>

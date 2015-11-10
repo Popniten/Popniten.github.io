@@ -1,0 +1,13 @@
+<meta property="og:title" content="{% if page.title %}{{ page.title }} || {% endif %}{{ site.title }}" />
+{% if page.title %}
+<meta property="og:type" content="article" />
+{% else %}
+<meta property="og:type" content="website" />
+{% endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:image" content="{{ "/assets/opengraph_image.png" | prepend: site.baseurl }}" />
+{% if page.description %}
+<meta content="{{ page.description }}" property="og:description">
+{% else %}
+<meta content="{{ site.description }}" property="og:description">
+{% endif %}

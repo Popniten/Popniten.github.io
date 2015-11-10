@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "A blog about me."
+title:  "A blog about me"
 date:   2015-11-04 12:56:13
 author: Popniten
+description: A blog post about me.
 categories: about
 ---
 

@@ -1,11 +1,9 @@
 ---
-layout: page
-title: About
+layout:      page
+title:       About
+date:        2015-11-10 12:56:13
+author:      Pär Eriksson
+description: Information about the person behind this website. 
 permalink: /about/
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Here will be info about me.
