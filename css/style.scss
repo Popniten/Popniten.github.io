@@ -10,6 +10,7 @@ $height-footer: 120px;
 $color-background-base: #fbfbfb;
 $color-text-base: #343434;
 $color-text-light: #7c7c7c;
+$color-text-superlight: #e3e3e3;
 $color-link-base: #1144ff;
 $color-link-hover: #f2c40f;
 $color-link-visited: #553bab;
@@ -61,7 +62,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #D64937;
 }
 
-/* Styling */
+/* General styling */
 html {
     min-height: 100%;
     position: relative;
@@ -128,32 +129,6 @@ main {
     margin-top: $margin-layout-element;
 }
 
-
-p {
-    max-width: 90%;
-    margin: 10px auto;
-    text-align: justify;
-}
-
-a {
-    color: $color-link-base;
-    text-decoration: none;
-}
-
-a:visited {
-    color: $color-link-visited;
-}
-
-a:hover {
-    color: $color-link-hover;
-}
-
-
-h2, h3, h4 {
-    font-family: $font-family-serif;
-    margin: 10px 0 0 0;
-}
-
 aside {
     display: inline-block;
     text-align: center;
@@ -208,6 +183,44 @@ footer {
     }
 }
 
+
+/* Typographic styling */
+p {
+    margin: 15px 0;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+blockquote, pre>code {
+    background: $color-text-superlight;
+    display: block;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+a {
+    color: $color-link-base;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $color-link-visited;
+}
+
+a:hover {
+    color: $color-link-hover;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: $font-family-serif;
+    margin: 10px 0 0 0;
+}
+
 .description {
     color: $color-text-light;
     font-family: $font-family-serif;
@@ -229,6 +242,12 @@ footer {
         width: 100%;
         text-align: center;
     }
+
+    p {
+        max-width: 90%;
+        margin: 10px auto;
+        text-align: justify;
+    }
 }
 
 .summaryTitle {
@@ -244,3 +263,13 @@ footer {
     float: right;
 }
 
+.left {
+    float: left;
+}
+
+/* Media queries */
+
+/* Imports */
+@import
+    "syntax-highlighting"
+;

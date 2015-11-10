@@ -1,22 +1,47 @@
 ---
 layout: default
 ---
+<p class="description">
+    {{ site.description }}
+</p>
+<div class="summary">
+    <div>
+            <span class="fa-stack fa-3x fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+            </span>
+    </div>
+    <span class="summaryTitle">Latest in the blog</span>
+    {% for post in site.posts limit 4 %}
 
-<div class="wrapContent">
-    <aside class="asideSecondary">
-        <h2>Senast i bloggen</h2>
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    {% if post.author %}
+    <small><em>{{ post.author }}, {{ post.date | date: "%b %-d, %Y" }}</em></small>
+    {% endif %}
 
-        {% for post in site.posts limit 4 %}
-
-        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <h4>By Popniten</h4>
-
-        {% endfor %}
-
-    </aside>
-    <main class="mainPrimary">
-        <p>
-            {{ site.description }}
-        </p>
-    </main>
+    {% endfor %}
+</div>
+<div class="summary">
+    <div>
+            <span class="fa-stack fa-3x fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+            </span>
+    </div>
+    <span class="summaryTitle">My course projects</span>
+    <p>
+        Here will be links to all projects I make in the courses I take.
+    </p>
+</div>
+<div class="summary">
+    <div>
+            <span class="fa-stack fa-3x fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+            </span>
+    </div>
+    <span class="summaryTitle">Design portfolio</span>
+    <p>
+        This will act as a portfolio for web design, drawings and other art I make.
+    </p>
 </div>

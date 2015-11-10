@@ -1,24 +1,51 @@
 <footer>
-    <div class="wrap">
-        <p class="footLeft">
-            {% if site.github_username %}
-            <a href="https://github.com/{{ site.github_username }}"> <i class="fa fa-github-square"></i> GitHub<br /></a>
+    <div>
+        <div>
+            <img src="{{ "/assets/Popniten.jpg" | prepend: site.baseurl }}" alt="Pär 'Popniten' Eriksson" />
+            &copy; 2015, Pär Eriksson
+        </div>
+        <div class="right">
+            Find me:
+            {% if site.email %}
+            <a href="mailto:{{ site.email }}">
+            <span class="fa-stack color-fa-ma fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
             {% endif %}
-
             {% if site.github_username %}
-            <a href="https://www.facebook.com/{{ site.facebook_username }}"> <i class="fa fa-facebook-square"></i> Facebook<br /></a>
+            <a href="https://github.com/{{ site.github_username }}">
+            <span class="fa-stack color-fa-gh fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
             {% endif %}
-
-            {% if site.github_username %}
-            <a href="https://twitter.com/{{ site.twitter_username }}"> <i class="fa fa-twitter-square"></i> Twitter<br /></a>
+            {% if site.facebook_username %}
+            <a href="http://facebook.com/{{ site.facebook_username }}">
+            <span class="fa-stack color-fa-fb fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
             {% endif %}
-
-            <i class="fa fa-rss-square"></i> Subscribe<br />
-        </p>
-        <p class="footRight">
-            <a href="http://lnu.se/">Linnaeus University</a><br />
-            <a href="https://coursepress.lnu.se/program/utveckling-och-drift-av-mjukvarusystem/">Software development and operations</a><br />
-        </p>
-        <span class="copy">&copy; 2015 Pär Eriksson</span>
+            {% if site.twitter_username %}
+            <a href="http://twitter.com/{{ site.twitter_username }}">
+            <span class="fa-stack color-fa-tw fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+            {% endif %}
+            {% if site.instagram_username %}
+            <a href="http://instagram.com/{{ site.instagram_username }}">
+            <span class="fa-stack color-fa-in fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+            {% endif %}
+        </div>
     </div>
 </footer>

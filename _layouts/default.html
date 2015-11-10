@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="sv">
-
+<html lang="en">
 {% include head.html %}
-
 <body>
 
-{% include header.html %}
-
-{{ content }}
-
+<div id="wrapper">
+    {% include nav.html %}
+    <main>
+        {{ content }}
+    </main>
+    {% include aside.html %}
+</div>
 {% include footer.html %}
 </body>
 </html>
