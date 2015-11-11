@@ -1,0 +1,19 @@
+---
+layout: default
+title:  Courses
+permalink: /courses/
+---
+<main>
+    <h1>Courses taken</h1>
+    <p>
+        Here is a list of university courses I have completed or are currently on, with at brief description of them
+        and my results in them if completed.
+    </p>
+    {% for course in site.courses %}
+    <ul class="course">
+        <li>{{ course.title }}</li>
+        <li>{{ course.desc }}</li>
+        <li><em>{{ course.school }} | {{ course.period }} | {{ course.achieved }} / {{ course.points }} hp | {{ course.grade }}</em></li>
+    </ul>
+    {% endfor %}
+</main>

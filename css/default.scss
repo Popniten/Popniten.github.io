@@ -7,7 +7,7 @@ $width-main: 65%;
 
 $height-footer: 120px;
 
-$color-background-base: #fbfbfb;
+$color-background-base: #fafafa;
 $color-text-base: #343434;
 $color-text-light: #7c7c7c;
 $color-text-superlight: #e3e3e3;
@@ -24,7 +24,7 @@ $margin-layout-element: 20px;
 
 /* Resets */
 html, body, nav, main, aside, div, img, ul,
-h1, h2, h3, h4, h5, h6, p, blockquote {
+h1, h2, h3, h4, h5, h6, p, blockquote, table {
     margin: 0;
     padding: 0;
 }
@@ -209,7 +209,32 @@ ul {
     margin-left: 25px;
 }
 
-blockquote, pre>code {
+blockquote {
+    background: white;
+    border-left: 8px solid $color-text-light;
+    border-right: 8px solid $color-text-light;
+    font-family: $font-family-serif;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: block;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin: 0 auto;
+    width: 90%;
+
+    cite:before {
+        content: "\2014";
+    }
+
+    cite {
+        display: block;
+        font-family: $font-family-heading;
+        letter-spacing: 2px;
+    }
+}
+
+pre>code {
     background: $color-text-superlight;
     font-size: 16px;
     display: block;
@@ -217,6 +242,13 @@ blockquote, pre>code {
     padding: 5px 15px;
     margin: 0 auto;
     width: 90%;
+}
+
+main img {
+    border: 15px solid $color-text-superlight;
+    max-width: 30%;
+    float: right;
+    margin: 5px;
 }
 
 a {
@@ -285,6 +317,43 @@ h3.blog, h4.blog {
 
 #disqus_thread {
     margin-top: 30px;
+}
+
+table {
+    width: 100%;
+}
+
+td, th {
+    padding: 4px;
+}
+
+th {
+    background: $color-text-light;
+}
+
+tr:nth-child(even) {
+    background: $color-text-superlight;
+}
+
+tr:nth-child(odd) {
+    background: white;
+}
+
+/* Course collection styling */
+ul.course {
+    font-size: 16px;
+    list-style-type: none;
+    margin-bottom: 10px;
+
+    li {
+        text-indent: 15px;
+    }
+
+    :first-child {
+        font-weight: bold;
+        text-indent: 0;
+    }
+
 }
 
 /* Alignment */

@@ -1,5 +1,7 @@
 <nav>
+    <a href="{{ "/" | prepend: site.baseurl }}" title="Home">
     <img src="{{ "/assets/pop-logo.png" | prepend: site.baseurl }}" alt="Popnitens logo" />
+    </a>
     <ul>
         {% for page in site.pages %}
         {% if page.title %}

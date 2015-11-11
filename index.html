@@ -13,7 +13,7 @@ layout: default
             </span>
     </div>
     <span class="summaryTitle">Latest in the blog</span>
-    {% for post in site.posts limit 4 %}
+    {% for post in site.posts limit 3 %}
 
     <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
     {% if post.author %}
@@ -43,7 +43,7 @@ layout: default
     </div>
     <span class="summaryTitle">Design portfolio</span>
     <p>
-        This will act as a portfolio for web design, drawings and other art I make.
+        This is my portfolio of web design, drawings and other art I make.
     </p>
 </div>
 </main>

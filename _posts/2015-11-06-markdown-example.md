@@ -1,15 +1,14 @@
 ---
 layout: post
 title:  "Markdown example for typography design"
-date:   2015-11-10 12:56:13
+date:   2015-11-06 12:56:13
 author: Pär Eriksson
 description: A template of markdown for typography design.
 categories: Markdown Typography
 ---
-Donec id magna nibh. Aliquam dictum luctus lacus, mattis cursus nisi feugiat et. Suspendisse potenti. Nullam cursus, 
-ex non maximus pellentesque, velit tortor iaculis ex, non pretium eros mi quis tortor. Suspendisse ex libero, dignissim 
-sit amet efficitur ac, iaculis at nisl. Vivamus erat quam, accumsan et placerat quis, laoreet nec urna. Cras mauris 
-dolor, feugiat et rhoncus non, euismod non ligula. 
+This is just a template file containing a lot of texts, lists, quotes and other common elements in a blog post. I will 
+use this template file to make my typographic design on this website. Typography is very important on a site like this 
+where raw text is mostly the main information.
 
 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
 look like:
@@ -21,17 +20,22 @@ look like:
 Note that --- not considering the asterisk --- the actual text
 content starts at 4-columns in.
 
-> Block quotes are
-> written like so.
+> Only two things are infinite: the universe and human stupidity;
+> and I'm not so sure of the universe.
 >
-> They can span multiple paragraphs,
-> if you like.
+> <cite>Albert Einstein</cite>
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
+Use 3 dashes ---for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
 Unicode is supported. ☺
 
-
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
 
 An h2 header
 ------------

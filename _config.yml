@@ -16,3 +16,7 @@ color_scheme: /css/default.css
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  - courses
