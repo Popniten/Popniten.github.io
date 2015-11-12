@@ -35,9 +35,8 @@ $margin-layout-element: 20px;
 .color-fa-gp {color: #DC4E41;}
 
 /* Imports */
-@import
-    "general",
-    "typography",
-    "media-queries",
-    "syntax-highlighting"
+@import "../_sass/general",
+"../_sass/typography",
+"../_sass/media-queries",
+"../_sass/_syntax-highlighting"
 ;
