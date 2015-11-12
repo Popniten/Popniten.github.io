@@ -1,5 +1,5 @@
 /* TEAM */
-Your title: Pär Eriksson.
+My name: Pär Eriksson.
 Site: https://popniten.github.io/
 Twitter: ParPopniten.
 Location: Kalmar, Sweden.
@@ -9,7 +9,6 @@ Name: lindehoff, leitet, mats, thajo
 URL: http://udm-devops.se/, http://webbprogrammerare.se/, http://lnu.se/
 
 /* SITE */
-Last update: 2015/11/10
 Standards: HTML5, CSS3, JavaScript ES5
 Components: Jekyll, Sass, Font Awesome, Disqus, Open Graph
 Software: JetBrains WebStorm, Inkscape

@@ -7,8 +7,8 @@ description: A template of markdown for typography design.
 categories: Markdown Typography
 ---
 This is just a template file containing a lot of texts, lists, quotes and other common elements in a blog post. I will 
-use this template file to make my typographic design on this website. Typography is very important on a site like this 
-where raw text is mostly the main information.
+use this template file to make my typographic design on this website after which I will remove this post. 
+Typography is very important on a site like this where raw text is mostly the main information.
 
 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
 look like:
