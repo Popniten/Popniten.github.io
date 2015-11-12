@@ -10,4 +10,3 @@ Building this website has been fun and enlightening, using what to me was a lot 
 experience building simple web applications in PHP prior to this and I must say, CSS-pre-processors and Static Site 
 Generators has made that so much easier. Even though there are many components to get accustomed to, each single component 
 is in its core quite simple to use.
-
