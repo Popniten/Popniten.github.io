@@ -10,7 +10,8 @@ $height-footer: 120px;
 $color-background-base: #fafafa;
 $color-text-base: #343434;
 $color-text-light: #7c7c7c;
-$color-text-superlight: #e3e3e3;
+$color-text-verylight: #d3d3d3;
+$color-text-superlight: #efefef;
 $color-link-base: #1144ff;
 $color-link-hover: #f2c40f;
 $color-link-visited: #553bab;
@@ -115,11 +116,13 @@ nav {
             text-transform: uppercase;
 
             a, a:visited {
+                transition: color 0.3s ease;
                 color: $color-text-base;
                 text-decoration: none;
             }
 
             a:hover {
+                transition: color 0.2s ease;
                 color: $color-link-hover;
             }
         }
@@ -142,7 +145,14 @@ aside {
 
     a:hover {
         span {
+            transition: color 0.2s ease;
             color: $color-link-hover;
+        }
+    }
+
+    a {
+        span {
+            transition: color 0.3s ease;
         }
     }
 }
@@ -174,7 +184,14 @@ footer {
 
     a:hover {
         span {
+            transition: color 0.2s ease;
             color: $color-link-hover;
+        }
+    }
+
+    a {
+        span {
+            transition: color 0.3s ease;
         }
     }
 
@@ -251,19 +268,20 @@ main img {
     margin: 5px;
 }
 
-a {
-    color: $color-link-base;
-    text-decoration: none;
-}
-
 a:visited {
     color: $color-link-visited;
 }
 
 a:hover {
+    transition: color 0.2s ease;
     color: $color-link-hover;
 }
 
+a {
+    transition: color 0.3s ease;
+    color: $color-link-base;
+    text-decoration: none;
+}
 
 h1, h2, h3, h4 {
     font-family: $font-family-serif;
@@ -320,6 +338,7 @@ h3.blog, h4.blog {
 }
 
 table {
+    font-size: 16px;
     width: 100%;
 }
 
@@ -328,15 +347,11 @@ td, th {
 }
 
 th {
-    background: $color-text-light;
+    background: $color-text-verylight;
 }
 
 tr:nth-child(even) {
     background: $color-text-superlight;
-}
-
-tr:nth-child(odd) {
-    background: white;
 }
 
 /* Course collection styling */

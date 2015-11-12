@@ -4,16 +4,27 @@ title:  Courses
 permalink: /courses/
 ---
 <main>
-    <h1>Courses taken</h1>
+    <h1>Course results in my studies</h1>
     <p>
         Here is a list of university courses I have completed or are currently on, with at brief description of them
         and my results in them if completed.
     </p>
-    {% for course in site.courses %}
-    <ul class="course">
-        <li>{{ course.title }}</li>
-        <li>{{ course.desc }}</li>
-        <li><em>{{ course.school }} | {{ course.period }} | {{ course.achieved }} / {{ course.points }} hp | {{ course.grade }}</em></li>
-    </ul>
-    {% endfor %}
+
+    <table>
+        <thead>
+            <th>Course</th><th>School</th><th>Coursecode</th><th>Points</th><th>Grade</th>
+        </thead>
+        <tbody>
+            {% for course in site.courses %}
+            <tr>
+                <td><span title="{{ course.desc }}">{{ course.title }}</span></td>
+                <td>{{ course.school }}</td>
+                <td>{{ course.code }}</td>
+                <td>{{ course.points}}</td>
+                <td>{{ course.grade }}</td>
+                </ul>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </main>
