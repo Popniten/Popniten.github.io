@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Linnaeus University in Sweden. I will blog about my progress in the courses
   I take and also showcase the projects spawned from those courses.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://popniten.github.io" # the base hostname & protocol for your site
+url: "http://popniten.github.io" # the base hostname & protocol for your site
 twitter_username: ParPopniten
 github_username:  Popniten
 facebook_username: par.eriksson.18
