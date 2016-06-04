@@ -10,6 +10,35 @@ This is just a template file containing a lot of texts, lists, quotes and other 
 use this template file to make my typographic design on this website after which I will remove this post. 
 Typography is very important on a site like this where raw text is mostly the main information.
 
+Some javascript:
+
+{% highlight javascript %}
+var UserSchema = require("./User.schema.js");
+var config = require("../../../config/config.json");
+
+/**
+ * Simple User authentication test.
+ */
+module.exports = (function() {
+
+    var isAuthenticated = function(key) {
+        return key === config.betaKey;
+    };
+
+    var login = function(userObj) {
+        var newUser = new UserSchema(userObj);
+        newUser.save();
+        return newUser._id;
+    };
+
+    return {
+        isAuthenticated: isAuthenticated,
+        login: login
+    };
+})();
+
+{% endhighlight %}
+
 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
 look like:
 
