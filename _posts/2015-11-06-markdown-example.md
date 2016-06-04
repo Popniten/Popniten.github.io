@@ -12,7 +12,7 @@ Typography is very important on a site like this where raw text is mostly the ma
 
 Some javascript:
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 var UserSchema = require("./User.schema.js");
 var config = require("../../../config/config.json");
 
