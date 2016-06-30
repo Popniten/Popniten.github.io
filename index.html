@@ -1,49 +1,33 @@
----
-layout: default
----
-<main>
-<p class="description">
-    {{ site.description }}
-</p>
-<div class="summary">
-    <div>
-            <span class="fa-stack fa-3x fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
-            </span>
-    </div>
-    <span class="summaryTitle">Latest in the blog</span>
-    {% for post in site.posts limit 3 %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title> {% if page.title %} {{ page.title }} | {% endif %} John Doe, Photographer </title>
+    <link rel="stylesheet" href="/css/default.css" />
+</head>
+<body>
 
-    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-    {% if post.author %}
-    <small><em>{{ post.author }}, {{ post.date | date: "%b %-d, %Y" }}</em></small>
-    {% endif %}
+<div id="main">
 
-    {% endfor %}
+    <header>
+        <h1> John Doe Photograghy </h1>
+        <header>
+
+            <nav role="navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/portfolio/">Portfolio</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            {{ content }}
+
+            <footer>
+                <p>@copy; John Doe Photography 2011 | All Rights Reserved. </p>
+            </footer>
+
 </div>
-<div class="summary">
-    <div>
-            <span class="fa-stack fa-3x fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-book fa-stack-1x fa-inverse"></i>
-            </span>
-    </div>
-    <span class="summaryTitle">My course projects</span>
-    <p>
-        This will be a collection of the projects I make at the university, as well as personal projects.
-    </p>
-</div>
-<div class="summary">
-    <div>
-            <span class="fa-stack fa-3x fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-            </span>
-    </div>
-    <span class="summaryTitle">Design portfolio</span>
-    <p>
-        This is my portfolio of web design, drawings and other art I make.
-    </p>
-</div>
-</main>
+</body>
+</html>
