@@ -1,1 +1,11 @@
 /* Media queries */
+
+@media (max-width : 640px) {
+    #topbar h1 {
+        font-size: 22px;
+    }
+
+    #bigPicture {
+        display: none;
+    }
+}
