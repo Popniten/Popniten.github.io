@@ -21,7 +21,7 @@ $font-family-heading: "Yanone Kaffeesatz", sans-serif;
 $font-family-base: "Open Sans", sans-serif;
 $font-family-serif: "Sanchez", serif;
 
-$margin-layout-element: 20px;
+$margin-layout-element: 400px;
 
 /* Brand icon colors */
 .color-fa-fb {color: #3B5998;}
@@ -37,8 +37,8 @@ $margin-layout-element: 20px;
 /* Imports */
 @import
     "general",
-    "topbar",
-    "big-picture",
+    "color-theme",
+    "layout",
     "typography",
     "media-queries",
     "syntax-highlighting"

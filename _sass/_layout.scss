@@ -1,0 +1,32 @@
+nav {
+    background: $bg-color-navbar;
+    height: 100px;
+    line-height: 100px;
+}
+
+header {
+    height: 500px;
+    background: $bg-color-header;
+    color: $text-color-white;
+    text-align: center;
+}
+
+section {
+    h1 {}
+    h2 {}
+}
+
+.dev_envs {
+    background: $bg-color-light;
+    height: 500px;
+}
+
+.hello_universe {
+    background: $bg-color-blue;
+    height: 500px;
+}
+
+.blog {
+    background: $bg-color-light;
+    height: 500px;
+}
