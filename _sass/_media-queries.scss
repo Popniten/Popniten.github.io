@@ -1,11 +1,16 @@
-/* Media queries */
+/* Mobile first queries */
 
-@media (max-width : 640px) {
-    #topbar h1 {
-        font-size: 22px;
-    }
+/* Larger than mobile */
+@media (min-width: 400px) {}
 
-    #bigPicture {
-        display: none;
-    }
-}
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
