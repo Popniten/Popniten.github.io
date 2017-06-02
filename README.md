@@ -16,4 +16,11 @@ _site
 ~~Then just do a `vagrant up` and `vagrant ssh`. In the vagrant machine `cd /vagrant` and to~~ start the
 jekyll server `jekyll server --host 0.0.0.0 --port 4000 --force_polling --watch`
 
+Or:
+
+```bash
+bundler install
+guard
+```
+
 Then in a browser on your host machine, go to `http://localhost:4000`.
