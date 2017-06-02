@@ -2,15 +2,17 @@
 My name: Pär Eriksson.
 Site: https://popniten.github.io/
 Education: Software Development and Operations, Linnaeus University, Kalmar
+Empoyments: Atlas Copco - assembler, cnc operator
+            (Currently at leave for university studies)
 Twitter: ---.
 Location: Kalmar, Sweden.
 
 /* THANKS */
-Name: lindehoff, leitet, mats, thajo
+Name: lindehoff, leitet, mats, thajo, hobbe, toll
 URL: http://udm-devops.se/, http://webbprogrammerare.se/, http://lnu.se/
 
 /* SITE */
 Standards:  HTML5, CSS3, JavaScript ES6
 Components: Jekyll, Sass, Font Awesome, Disqus, Open Graph,
             Material Design Lite
-Software:   VS Code, Inkscape
+Software:   VS Code, Inkscape, Krita
