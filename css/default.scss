@@ -15,13 +15,11 @@
 
 /* Imports */
 @import
+    "header",
+    "nav",
+    "splash",
     "cards",
     "media-queries",
     "syntax-monokai"
 ;
 
-.color-bg-dark {background: #273238;}
-
-.mdl-card {
-    margin: 0 auto;
-}
