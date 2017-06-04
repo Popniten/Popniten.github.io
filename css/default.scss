@@ -15,10 +15,13 @@
 
 /* Imports */
 @import
+    "cards",
     "media-queries",
     "syntax-monokai"
 ;
 
-.splash {
-    text-align: center;
-  }
+.color-bg-dark {background: #273238;}
+
+.mdl-card {
+    margin: 0 auto;
+}
