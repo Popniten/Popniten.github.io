@@ -1,5 +1,6 @@
 footer {
-  background: grey;
+  background: $color-dark-main;
+  color: $color-light-accent;
   min-height: 100px;
   padding: 0 $padding-sides
 }
