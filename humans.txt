@@ -14,5 +14,5 @@ URL: http://udm-devops.se/, http://webbprogrammerare.se/, http://lnu.se/
 /* SITE */
 Standards:  HTML5, CSS3, JavaScript ES6
 Components: Jekyll, Sass, Font Awesome, Disqus, Open Graph,
-            Material Design Lite
+            Material Design Lite, Normalize.css
 Software:   VS Code, Inkscape, Krita

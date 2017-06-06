@@ -1,0 +1,19 @@
+// Colors
+$color-dark-main: #2b2c2e;
+$color-dark-accent: #2b2c2e;
+
+$color-light-main: #5ACECD;
+$color-light-accent: #F2F2F2;
+
+// Measurements
+$padding-sides: 200px;
+
+body.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main.site-content {
+  flex: 1;
+}

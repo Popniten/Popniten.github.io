@@ -1,0 +1,66 @@
+nav {
+  background: white;
+  border-top: 5px solid $color-dark-main;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+
+  .menu-toggle {
+    border-radius: 10px;
+    color: $color-dark-main;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  .menu-toggle:hover {
+    background: $color-light-accent;
+  }
+}
+
+/* Mobile first queries */
+
+/* Starting point */
+@media (min-width: 200px) {
+  nav {
+    height: 70px;
+  }
+
+  .menu-toggle {
+    margin-left: 5px;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  nav {
+    height: 100px;
+  }
+
+  .menu-toggle {
+    margin-left: 20px;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+}

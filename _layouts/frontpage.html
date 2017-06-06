@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body>
+  <body class="site">
     {% include nav.html %}
-    {% include header.html %}
-    {% include front/guides.html %}
-    {{ content }}
+    <main class="site-content">
+      {% include header.html %}
+      {% include front/guides.html %}
+    </main>
     {% include footer.html %}
 
     <!--<script id="dsq-count-scr" src="//popnitendevop.disqus.com/count.js" async></script>-->
