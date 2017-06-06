@@ -1,6 +1,5 @@
 header {
   height: 400px;
-  margin-top: 110px;
   border-bottom: 5px solid $color-dark-main;
 }
 
@@ -14,6 +13,7 @@ header.front {
 @media (min-width: 200px) {
   header {
     height: 200px;
+    margin-top: 80px;
     padding: 0 $padding-sides-mobile;
   }
 }
@@ -22,6 +22,7 @@ header.front {
 @media (min-width: 550px) {
   header {
     height: 400px;
+    margin-top: 110px;
   }
 }
 
