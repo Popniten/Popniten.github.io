@@ -2,8 +2,6 @@
 My name: Pär Eriksson.
 Site: https://popniten.github.io/
 Education: Software Development and Operations, Linnaeus University, Kalmar
-Empoyments: Atlas Copco - assembler, cnc operator
-            (Currently at leave for university studies)
 Twitter: ---.
 Location: Kalmar, Sweden.
 
@@ -15,4 +13,42 @@ URL: http://udm-devops.se/, http://webbprogrammerare.se/, http://lnu.se/
 Standards:  HTML5, CSS3, JavaScript ES6
 Components: Jekyll, Sass, Font Awesome, Disqus, Open Graph,
             Material Design Lite, Normalize.css
-Software:   VS Code, Inkscape, Krita
+Software:   VS Code, Chrome, Inkscape, Krita
+
+/* SPECIAL THANKS */
+
+              MMMMMMMMM                         MMMMMMMMM
+          MMMMMMMMMMMMMMMMMM               MMMMMMMMMMMMMMMMMM
+       MMMMMMMXXXXXXXXXXMMMMMMM         MMMMMMMXXXXXXXXXXMMMMMMM
+    MMMMMMXXXXXXXXXXXXXXXXXMMMMMM     MMMMMMXXXXXXXXXXXXXXXXXMMMMMM
+   MMMMMXXXXXXXXOOOOOOOOXXXXXXMMMM   MMMMXXXXXXOOOOOOOOXXXXXXXXMMMMM
+  MMMMXXXXXXXOOOOOOOOOOOOOOOXXXXMMM MMMXXXXOOOOOOOOOOOOOOOXXXXXXXMMMM
+ MMMMXXXXXXOOOOOOOOOOOOOOOOOOOOXXXMMMXXXOOOOOOOOOOOOOOOOOOOOXXXXXXMMMM
+ MMMXXXXXOOOOOOOOOOOOOOOOOOOOOOOOXXXXXOOOOOOOOOOOOOOOOOOOOOOOOXXXXXMMM
+MMMXXXXXOOOOOOOOOOO       OOOOOOOOOXOOOOOOOOO       OOOOOOOOOOOOXXXXMMM
+MMMXXXXOOOOOOOOO              OOOOOOOOOOO    Oscar     OOOOOOOOOOXXXMMM
+MMMXXXXOOOOOOOO        Martin    OOOOO                  OOOOOOOOOXXXMMM
+MMMXXXXOOOOOOO    Axel             O                     OOOOOOOOXXXMMM
+MMMXXXXOOOOOOO                               Loke        OOOOOOOOXXXMMM
+MMMXXXXOOOOOOO                                           OOOOOOOOXXXMMM
+MMMXXXXXOOOOOO          Hampus       Oskar               OOOOOOOXXXXMMM
+ MMMXXXXOOOOOOO                                         OOOOOOOOXXXMMM
+ MMMMXXXXOOOOOOO    Willam               Benny         OOOOOOOOXXXMMMM
+  MMMXXXXOOOOOOOOO                                    OOOOOOOOOXXXMMM
+  MMMMXXXXOOOOOOOOOO      Richard                   OOOOOOOOOOXXXMMMM
+   MMMXXXXXOOOOOOOOOOO                           OOOOOOOOOOOOXXXXMMM
+    MMMXXXXXOOOOOOOOOOOOO       Christoffer   OOOOOOOOOOOOOOXXXXMMM
+     MMMXXXXXOOOOOOOOOOOOOOO               OOOOOOOOOOOOOOOOXXXXMMM
+      MMMXXXXXOOOOOOOOOOOOOOOOO         OOOOOOOOOOOOOOOOOXXXXXMMM
+       MMMXXXXXXOOOOOOOOOOOOOOOOOO   OOOOOOOOOOOOOOOOOOXXXXXXMMM
+         MMMXXXXXXXOOOOOOOOOOOOOOOO OOOOOOOOOOOOOOOOXXXXXXXMMM
+           MMMXXXXXXXXOOOO###################OOOOOXXXXXXXXMMM
+             MMMMXXXXXXXOO# Dragonslayer_96 #OOXXXXXXXMMMM
+                MMMMXXXXXX###################XXXXXMMMMM
+                   MMMMMXXXXXXXXXXXOXXXXXXXXXXXMMMMM
+                      MMMMMMXXXXXXXXXXXXXXXMMMMMM
+                          MMMMMMXXXXXXXMMMMMM
+                              MMMMMXMMMMM
+                                 MMMMM
+                                  MMM
+                                   M
