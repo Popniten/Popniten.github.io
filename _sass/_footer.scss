@@ -1,6 +1,7 @@
 footer {
-  background: $color-dark-main;
+  background: $color-dark-accent;
   color: $color-light-accent;
+  border-top: 5px solid $color-dark-main;
   min-height: 100px;
 }
 

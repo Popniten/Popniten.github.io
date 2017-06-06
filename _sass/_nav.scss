@@ -1,8 +1,11 @@
 nav {
   background: white;
   border-top: 5px solid $color-dark-main;
+  border-bottom: 5px solid $color-dark-main;
   height: 100px;
 
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
