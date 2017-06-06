@@ -37,7 +37,7 @@ nav {
   }
 }
 
-ul.main-nav {
+.main-nav ul.menu {
   padding: 0 20px;
   li {
     font-family: 'Raleway', sans-serif;
@@ -53,7 +53,7 @@ ul.main-nav {
   nav {
     height: 70px;
 
-    .menu-toggle {
+    .main-nav ul.menu {
       margin-left: 5px;
     }
 
@@ -63,7 +63,7 @@ ul.main-nav {
     }
   }
 
-  ul.main-nav {
+  .main-nav ul.menu {
     display: none;
   }
 }
@@ -90,7 +90,7 @@ ul.main-nav {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  ul.main-nav {
+  .main-nav ul.menu {
     display: inline-flex;
     flex-direction: row;
   }
