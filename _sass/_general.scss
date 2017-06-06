@@ -12,6 +12,10 @@ $padding-sides-mobile: 5px;
 $padding-sides-tablet: 50px;
 $padding-sides-fullscreen: 200px;
 
+html {
+  overflow-y: scroll;
+}
+
 body.site {
   display: flex;
   min-height: 100vh;
@@ -20,6 +24,9 @@ body.site {
 
 main.site-content {
   flex: 1;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
 }
 
 .spacer {

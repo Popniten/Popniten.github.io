@@ -42,10 +42,26 @@ nav {
 
 .main-nav ul.menu {
   padding: 0 20px;
+  margin: 0 20px;
+
   li {
     font-family: 'Raleway', sans-serif;
     list-style: none;
-    margin: 0 10px;
+    line-height: 2em;
+
+    a {
+      display: block;
+      margin: 0 20px;
+      text-decoration: none;
+      color: $color-dark-main;
+      border-bottom: 4px solid $color-light-main;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $color-dark-main;
+      border-bottom: 4px solid $color-dark-main;
+    }
   }
 }
 
@@ -93,13 +109,13 @@ nav {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .main-nav ul.menu {
-    display: inline-flex;
-    flex-direction: row;
-  }
+
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-
+  .main-nav ul.menu {
+    display: inline-flex;
+    flex-direction: row;
+  }
 }
