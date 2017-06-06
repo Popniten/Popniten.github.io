@@ -5,10 +5,12 @@ nav {
 
   display: flex;
   align-items: center;
+  flex-direction: row;
 
   .menu-toggle {
     border-radius: 10px;
     color: $color-dark-main;
+    cursor: pointer;
     height: 60px;
     width: 60px;
     display: flex;
@@ -24,6 +26,24 @@ nav {
   .menu-toggle:hover {
     background: $color-light-accent;
   }
+
+  span {
+    font-family: sans-serif;
+  }
+
+  span.two {
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+ul.main-nav {
+  padding: 0 20px;
+  li {
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    margin: 0 10px;
+  }
 }
 
 /* Mobile first queries */
@@ -32,10 +52,19 @@ nav {
 @media (min-width: 200px) {
   nav {
     height: 70px;
+
+    .menu-toggle {
+      margin-left: 5px;
+    }
+
+    span {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.8em;
+    }
   }
 
-  .menu-toggle {
-    margin-left: 5px;
+  ul.main-nav {
+    display: none;
   }
 }
 
@@ -43,10 +72,14 @@ nav {
 @media (min-width: 550px) {
   nav {
     height: 100px;
-  }
 
-  .menu-toggle {
-    margin-left: 20px;
+    .menu-toggle {
+      margin-left: 20px;
+    }
+
+    span {
+      font-size: 2em;
+    }
   }
 }
 
@@ -57,7 +90,10 @@ nav {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-
+  ul.main-nav {
+    display: inline-flex;
+    flex-direction: row;
+  }
 }
 
 /* Larger than Desktop HD */

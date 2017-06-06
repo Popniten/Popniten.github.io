@@ -1,6 +1,5 @@
 header {
   height: 400px;
-  padding: 0 $padding-sides
 }
 
 header.front {
@@ -13,7 +12,7 @@ header.front {
 @media (min-width: 200px) {
   header {
     height: 200px;
-    padding: 0 0;
+    padding: 0 $padding-sides-mobile;
   }
 }
 
@@ -26,7 +25,9 @@ header.front {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-
+  header {
+    padding: 0 $padding-sides-tablet;
+  }
 }
 
 /* Larger than desktop */
@@ -38,6 +39,6 @@ header.front {
 @media (min-width: 1200px) {
   header {
     height: 400px;
-    padding: 0 $padding-sides;
+    padding: 0 $padding-sides-fullscreen;
   }
 }

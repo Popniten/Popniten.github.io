@@ -8,7 +8,9 @@ $color-light-accent: darken($color-light-main, 5%);
 $color-header-front: #5ACECD;
 
 // Measurements
-$padding-sides: 200px;
+$padding-sides-mobile: 5px;
+$padding-sides-tablet: 50px;
+$padding-sides-fullscreen: 200px;
 
 body.site {
   display: flex;
@@ -17,5 +19,9 @@ body.site {
 }
 
 main.site-content {
+  flex: 1;
+}
+
+.spacer {
   flex: 1;
 }

@@ -2,7 +2,6 @@ footer {
   background: $color-dark-main;
   color: $color-light-accent;
   min-height: 100px;
-  padding: 0 $padding-sides
 }
 
 /* Mobile first queries */
@@ -10,7 +9,7 @@ footer {
 /* Larger than mobile */
 @media (min-width: 200px) {
   footer {
-    padding: 0 0;
+    padding: 0 $padding-sides-mobile;
   }
 }
 
@@ -21,7 +20,9 @@ footer {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-
+  footer {
+    padding: 0 $padding-sides-tablet;
+  }
 }
 
 /* Larger than desktop */
@@ -32,6 +33,6 @@ footer {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   footer {
-    padding: 0 $padding-sides;
+    padding: 0 $padding-sides-fullscreen;
   }
 }
