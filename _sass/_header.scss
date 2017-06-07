@@ -20,12 +20,32 @@ header.front {
   background: $color-header-front;
 }
 
+header.blog {
+  background: $color-header-blog;
+}
+
+header.devops {
+  background: $color-header-devops;
+}
+
+header.projects {
+  background: $color-header-projects;
+}
+
+header.snippets {
+  background: $color-header-snippets;
+}
+
+header.other {
+  background: $color-header-other;
+}
+
 /* Mobile first queries */
 
 /* Larger than mobile */
 @media (min-width: 200px) {
   header {
-    height: 200px;
+    min-height: 200px;
     margin-top: 80px;
     padding: 0 $padding-sides-mobile;
   }
