@@ -17,6 +17,11 @@ $padding-sides-mobile: 5px;
 $padding-sides-tablet: 50px;
 $padding-sides-fullscreen: 200px;
 
+// Fonts
+$font-headings: 'Open Sans', sans-serif;
+$font-texts: 'Josefin Slab', serif;
+$font-mono: 'Inconsolata', monospace;
+
 html {
   overflow-y: scroll;
 }
@@ -29,7 +34,6 @@ body.site {
 
 main.site-content {
   flex: 1;
-  font-family: 'Raleway', sans-serif;
   line-height: 1.2em;
   letter-spacing: 0.1em;
 }
@@ -37,3 +41,4 @@ main.site-content {
 .spacer {
   flex: 1;
 }
+
