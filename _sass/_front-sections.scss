@@ -6,10 +6,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
+  font-family: $font-texts;
+  font-size: 1.2em;
 
   h1 {
     font-family: $font-headings;
     text-transform: uppercase;
+    line-height: 2em;
   }
 
   div {
@@ -17,13 +21,15 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     article {
       flex: 0 1 auto;
       background: gray;
       min-height: 400px;
       width: 300px;
+      margin: 20px 0;
     }
   }
 }
@@ -56,7 +62,7 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  .site-content section {
-    padding: 50px $padding-sides-fullscreen;
-  }
+  // .site-content section {
+  //   padding: 50px $padding-sides-fullscreen;
+  // }
 }
