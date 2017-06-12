@@ -1,5 +1,5 @@
 .site-content section:nth-child(odd) {
-  background: lightgray;
+  background: $color-section-odd;
 }
 
 .site-content section {
@@ -24,7 +24,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
 
-    article {
+    figure {
       flex: 0 1 auto;
       background: gray;
       min-height: 400px;

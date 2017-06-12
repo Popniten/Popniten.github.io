@@ -5,6 +5,8 @@ $color-dark-accent: darken($color-dark-main, 5%);
 $color-light-main: #FFFFFF;
 $color-light-accent: darken($color-light-main, 5%);
 
+$color-section-odd: #9FF3C3;
+
 $color-header-front: #6AECF4;
 $color-header-blog: #45B4E7;
 $color-header-devops: #9FF3C3;
@@ -30,6 +32,7 @@ body.site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-size: 18px;
 }
 
 main.site-content {

@@ -1,12 +1,15 @@
+{% assign numPosts = site.posts.size %}
+{% if numPosts > 0 %}
+
 <section>
     <h1>Blog</h1>
     <p>Latest posts in my blog.</p>
 
     <div>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
     </div>
 
     <!--{% for post in site.posts limit: 10 %}
@@ -19,3 +22,5 @@
     {% endif %}
     {% endfor %}-->
 </section>
+
+{% endif %}

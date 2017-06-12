@@ -14,16 +14,16 @@ nav.main-nav {
     border-radius: 10px;
     color: $color-dark-main;
     cursor: pointer;
-    height: 60px;
-    width: 60px;
-    margin: 0 0 0 0;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     i {
-      height: 32px;
-      width: 32px;
+      height: 18px;
+      width: 18px;
     }
   }
 
@@ -41,7 +41,6 @@ nav.main-nav {
   }
 
   span.two {
-    font-family: $font-headings;
     font-weight: bold;
   }
 }
@@ -85,7 +84,7 @@ nav.main-nav {
 
     span {
       font-family: $font-headings;
-      font-size: 1.8em;
+      font-size: 1.4em;
     }
   }
 
@@ -97,14 +96,12 @@ nav.main-nav {
 /* Larger than phablet */
 @media (min-width: 550px) {
   nav {
-    height: 100px;
-
     .menu-toggle {
       margin-left: 20px;
     }
 
     span {
-      font-size: 2em;
+      font-size: 1.4em;
     }
   }
 }
