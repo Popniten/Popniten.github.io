@@ -4,7 +4,7 @@ title:       Reflections on the first project in 1DV022
 date:        2015-11-12 20:22:00
 author:      Pär Eriksson
 description: My reflections over the first examination task in 1DV022 - Client-based web programming.
-categories:  1DV022 Examination
+category:  Examination
 ---
 Building this website has been fun and enlightening, using what to me was a lot of new technologies. I had some
 experience building simple web applications in PHP prior to this and I must say, CSS-pre-processors and static site

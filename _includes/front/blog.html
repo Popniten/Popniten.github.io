@@ -6,10 +6,23 @@
     <p>Latest posts in my blog.</p>
 
     <div>
+      {% for post in site.posts limit: 4 %}
+
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <figure class="cardblog">
+          <h1>{{ post.title }}</h1>
+          <h2>{{ post.date | date: "%B %-d, %Y" }}</h2>
+          <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
+          <span>Posted in: <em>{{ post.category }}</em></span>
+        </figure>
+      </a>
+
+      {% endfor %}
+
+      <!--<figure></figure>
       <figure></figure>
       <figure></figure>
-      <figure></figure>
-      <figure></figure>
+      <figure></figure>-->
     </div>
 
     <!--{% for post in site.posts limit: 10 %}

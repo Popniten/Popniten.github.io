@@ -4,7 +4,8 @@ title:  Markdown example for typography design
 date:   2017-06-07 15:50:00
 author: Pär Eriksson
 description: A template of markdown for typography design.
-categories: Markdown Typography
+category: Typography
+tags: some tags here
 ---
 This is just a template file containing a lot of texts, lists, quotes and other common elements in a blog post. I will
 use this template file to make my typographic design on this website after which I will remove this post.
