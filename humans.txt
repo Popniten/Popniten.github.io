@@ -1,8 +1,12 @@
-/* TEAM */
+/* ABOUT ME */
 My name: Pär Eriksson.
 Site: https://popniten.github.io/
 Education: Software Development and Operations, Linnaeus University, Kalmar
-Twitter: ---.
+LinkedIn: ---
+Twitter: ---
+Facebook: ---
+Google+: ---
+YouTube: ---
 Location: Kalmar, Sweden.
 
 /* THANKS */

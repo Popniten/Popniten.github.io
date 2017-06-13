@@ -13,7 +13,7 @@
           <h1>{{ post.title }}</h1>
           <h2>{{ post.date | date: "%B %-d, %Y" }}</h2>
           <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
-          <span>Posted in: <em>{{ post.category }}</em></span>
+          <span>Posted in: <em>{{ post.categories }}</em></span>
         </figure>
       </a>
 
