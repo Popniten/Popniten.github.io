@@ -10,7 +10,7 @@ permalink: /blog/:categories/:year-:month-:day/:title
 ---
 This is just a template file containing a lot of texts, lists, quotes and other common elements in a blog post. I will
 use this template file to make my typographic design on this website after which I will remove this post.
-Typography is very important on a site like this where raw text is mostly the main information.
+Typography is very important on a site like this where raw text is mostly the main information. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ipsum eu elit molestie, sit amet tempus lacus fringilla. Nam mollis eu lorem non dignissim. Ut eu lobortis massa. Integer eget feugiat magna. Sed turpis turpis, vestibulum ornare maximus ut, sodales eu nulla. In vitae tristique ipsum. In semper iaculis magna ac sodales. Donec non erat molestie, feugiat purus ut, vestibulum dolor. Suspendisse potenti. Integer aliquam ligula condimentum, consequat ipsum at, scelerisque est. Sed viverra tincidunt ex, at suscipit odio pharetra at. Sed vulputate, dolor eu vehicula tempor, purus erat lacinia est, vitae dictum lectus nulla ullamcorper diam. Ut vel mauris et tellus maximus ultricies.
 
 Some javascript:
 
@@ -41,15 +41,13 @@ module.exports = (function() {
 
 {% endhighlight %}
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+Donec semper mauris ac nulla mattis, et pharetra ex pulvinar. Donec vel luctus justo, a maximus arcu. Phasellus tincidunt, eros ac convallis aliquet, turpis lorem efficitur mi, quis viverra nunc velit at elit. Duis sagittis nisi tristique, semper augue eu, rhoncus ligula. Nunc et diam faucibus, posuere odio a, luctus mi. Etiam gravida ex ac eleifend blandit. Nam vulputate sapien a augue eleifend, a accumsan urna accumsan. Pellentesque risus velit, suscipit et egestas at, suscipit id nisi. Duis ultrices, mi vel iaculis ultrices, dolor elit pulvinar urna, vitae pulvinar mi arcu vel ipsum. Duis a hendrerit nulla, ut luctus augue. 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
 look like:
 
   * this one
+    * sub one
   * that one
   * the other one
-
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
 
 > Only two things are infinite: the universe and human stupidity;
 > and I'm not so sure of the universe.
@@ -60,14 +58,6 @@ Use 3 dashes ---for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
 Unicode is supported. ☺
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
 An h2 header
 ------------
 
@@ -77,32 +67,14 @@ Here's a numbered list:
  2. second item
  3. third item
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
-
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
-
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
-
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
-
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
-
-~~~python
+{% highlight python linenos %}
 import time
 # Quick, count to ten!
 for i in range(10):
     # (but not *too* quick)
     time.sleep(0.5)
     print i
-~~~
+{% endhighlight %}
 
 
 
@@ -149,22 +121,6 @@ Tables can look like this:
 |11  |  glass       | transparent|
 
 Table: Shoes, their sizes, and what they're made of
-
-A horizontal rule follows.
-
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
 
 Here's a "line block":
 
