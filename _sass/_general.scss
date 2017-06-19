@@ -27,21 +27,3 @@ $font-mono: 'Inconsolata', monospace;
 html {
   overflow-y: scroll;
 }
-
-body.site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  font-size: 18px;
-}
-
-main.site-content {
-  flex: 1;
-  line-height: 1.2em;
-  letter-spacing: 0.1em;
-}
-
-.spacer {
-  flex: 1;
-}
-
