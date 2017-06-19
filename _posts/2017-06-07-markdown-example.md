@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  Markdown example for typography design
 date:   2017-06-07 15:50:00
 author: Pär Eriksson

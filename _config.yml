@@ -4,8 +4,8 @@ sitename: Popniten.github.io
 timezone: Europe/Stockholm
 encoding: utf-8
 email: pe222gq@student.lnu.se
-description: > # this means to ignore newlines until "baseurl:"
-  Exploring software development, environments, operations and documentation.
+description: > # this means to ignore newlines until next key
+  Exploring software and web development, environments, operations and documentation.
 quote: >
   "Enter a deep qoute here, to sound like a smartass."
 baseurl: "" # the subpath of your site, e.g. /blog/

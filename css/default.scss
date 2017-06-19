@@ -2,20 +2,9 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-/* Brand icon colors */
-.color-fa-fb {color: #3B5998;}
-.color-fa-gh {color: #666666;}
-.color-fa-tw {color: #55ACEE;}
-.color-fa-in {color: #3F729B;}
-.color-fa-rs {color: #FB7629;}
-.color-fa-ht {color: #E44D26;}
-.color-fa-cs {color: #0070BB;}
-.color-fa-ma {color: #D64937;}
-.color-fa-gp {color: #DC4E41;}
-
 /* Imports */
 @import
-    "reset",
+    "variables",
     "general",
     "syntax-highlights",
     "media-queries"

@@ -3,7 +3,24 @@
   {% include head.html %}
   <body class="site">
 
-  {{ content }}
+    <aside>
+      <img src="/assets/popniten.jpg" alt="Pär Eriksson">
+      <h1>Pär Eriksson</h1>
+      <h2>JS & Node developer</h2>
+      <p>
+        {{ site.description }}
+      </p>
+      <nav>
+        <a href="">/home</a>
+        <a href="">/archive</a>
+        <a href="">/categories</a>
+        <a href="">/about</a>
+      </nav>
+    </aside>
+
+    <main>
+      {{ content }}
+    </main>
 
   <script src="/js/index.js"></script>
   </body>

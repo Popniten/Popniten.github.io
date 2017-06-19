@@ -2,12 +2,51 @@
 
 /* Larger than mobile */
 @media (min-width: 200px) {
+  body {
+    flex-direction: column;
+  }
 
+  aside {
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p {
+      margin: 0 25px;
+      text-align: center;
+    }
+  }
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+  body {
+    display: flex;
+	  flex-direction: row;
+  }
 
+  aside {
+    flex: 0 0 450px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    p {
+      margin: 0 25px;
+      text-align: right;
+    }
+  }
 }
 
 /* Larger than tablet */
