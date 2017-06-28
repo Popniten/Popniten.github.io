@@ -1,6 +1,8 @@
 // Custom VS Code styled theme
 
-figure.highlight { background-color: lighten(#1E1E1E, 2%); }
+figure.highlight {
+  background-color: lighten(#1E1E1E, 2%);
+}
 .highlight {
   .nx, .p, .n {
     color: #7e8f8f

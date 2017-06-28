@@ -8,6 +8,7 @@ categories: Typography
 tags: some tags here
 permalink: /blog/:categories/:year-:month-:day/:title
 ---
+# H1 header
 This is just a template file containing a lot of texts, lists, quotes and other common elements in a blog post. I will
 use this template file to make my typographic design on this website after which I will remove this post.
 Typography is very important on a site like this where raw text is mostly the main information. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ipsum eu elit molestie, sit amet tempus lacus fringilla. Nam mollis eu lorem non dignissim. Ut eu lobortis massa. Integer eget feugiat magna. Sed turpis turpis, vestibulum ornare maximus ut, sodales eu nulla. In vitae tristique ipsum. In semper iaculis magna ac sodales. Donec non erat molestie, feugiat purus ut, vestibulum dolor. Suspendisse potenti. Integer aliquam ligula condimentum, consequat ipsum at, scelerisque est. Sed viverra tincidunt ex, at suscipit odio pharetra at. Sed vulputate, dolor eu vehicula tempor, purus erat lacinia est, vitae dictum lectus nulla ullamcorper diam. Ut vel mauris et tellus maximus ultricies.

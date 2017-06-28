@@ -109,3 +109,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.highlight table pre, .highlight table pre span {
+	font-family: 'Inconsoloata', monospace;
+}
+
+h1 {
+	font-size: 24px;
+	margin: 20px 40px 0 40px;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 20px 40px 0 40px;
+}
+
+h3 {
+	font-size: 18px;
+	margin: 20px 40px 0 40px;
+}
+
+p:first-of-type {
+	font-style: italic;
+	font-size: 19px;
+}
+
+p {
+	margin: 20px 40px 0 40px;
+	letter-spacing: 0.5px;
+	word-spacing: 3px;
+	line-height: 20px;
+}
+
+figure pre {
+	margin: 0px 10px 0 10px;
+}
+
+ul, ol {
+	margin: 20px 40px 0 40px;
+}
+
+table {
+	margin: 10px 40px 10px 40px;
+
+}
