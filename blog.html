@@ -1,0 +1,15 @@
+---
+layout: default
+permalink: /blog
+---
+
+<h1>Latest posts</h1>
+
+{% for post in site.posts limit 10 %}
+
+<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+<h4 class="blog">{{ post.date | date: "%B %-d, %Y" }}</h4>
+<p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+<h5>Category: {{ post.categories }}</h5>
+
+{% endfor %}
