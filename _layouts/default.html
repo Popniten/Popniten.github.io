@@ -37,5 +37,12 @@
         ga('send', 'pageview');
     </script>
   {% endif %}
+  <script src="/assets/js/scripts.js"></script>
+  {% if jekyll.environment == 'production' %}
+    I'm in production!
+    {% include analytics.html %}
+  {% else %}
+    I'm in development!
+  {% endif %}
   </body>
 </html>
