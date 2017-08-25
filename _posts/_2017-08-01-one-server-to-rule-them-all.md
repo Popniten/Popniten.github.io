@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  One server to rule them all
-date:   2017-08-24
+date:   2017-08-25
 author: Pär Eriksson
 description: A template of markdown for typography design.
 categories: Operations

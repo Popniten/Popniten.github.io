@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Markdown example for typography design
+title:  Markdown example for typographic design
 date:   2017-06-07
 author: Pär Eriksson
 description: A template of markdown for typography design.

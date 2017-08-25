@@ -12,7 +12,7 @@ type: blogpost
 
 Here is a neat little trick that I picked up in a StackOverflow answer a while back (will link if I find it again). It may be obvious to some, but I thought I'd share it anyway. It might not be that often that you can utilize it, but it offers a chance to write some cleaner code those few times.
 
-If you have an `if else` statement, where the `else` is containing another code block, you can simplify it, saving indentations and curly brackets. Compare:
+If you have an `if else` statement, where the `else` is containing another block statement, you can simplify it, saving indentations and curly brackets. Compare:
 
 ```javascript
 if (someStuff) {
