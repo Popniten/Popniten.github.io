@@ -7,7 +7,7 @@
       <section>
 
       {% if page.date %}
-      <h5>{{ page.date | date_to_long_string }}</h5>
+      <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
       <!--<h5>{{ page.author }}, {{ page.date | date_to_long_string }}</h5>-->
       {% endif %}
       {% if page.title %}
