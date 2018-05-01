@@ -5,7 +5,7 @@ timezone: Europe/Stockholm
 encoding: utf-8
 email: pe222gq@student.lnu.se
 description: > # this means to ignore newlines until next key
-  Exploring software and web development, environments and operations.
+  Exploring software and web development, environments and operations and meddling with hobby electronics and home automation.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://popniten.github.io" # the base hostname & protocol for your site
 twitter_username: ParPopniten
